@@ -120,7 +120,7 @@ var gameAction = {
             $('#g-sort-container, #g-select-container, #g-button-box').remove();
             var id = 1;
             try { id = localStorage.getItem('currentLevel'); } catch (e) {}
-            var obj = new gameArr[id * 1];
+            var obj = new gameArr[id * 1-1];
             obj.play({ id: id * 1 });
 
             gameAction.menuInit(gameArr);
