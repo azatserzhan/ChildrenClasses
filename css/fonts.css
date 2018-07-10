@@ -1,0 +1,14 @@
+@font-face {
+	font-family: h2;
+	src: url(../fonts/h2.otf);
+}
+
+@font-face {
+	font-family: h3;
+	src: url(../fonts/h3.ttf);
+}
+
+@font-face {
+	font-family: h1;
+	src: url(../fonts/h1.otf);
+}

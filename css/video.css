@@ -1,0 +1,6 @@
+#video-player{}  
+#myVideo{} 
+#video-play-button{background: url(../images/video-play.png) no-repeat center;position: absolute;width: 238px;height: 222px;left: 47%;top: 44%;}
+#light-box-video{position: absolute;left: 27%;top: 18%; width: auto}
+#video-container{position: absolute;left: 28.6%;top: 28%;}
+#video-exit{visibility: visible; background: url(../images/video-close.png) no-repeat center;position: absolute;width: 130px;height: 123px;left: 72%;top: 18%;}

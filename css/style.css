@@ -1,0 +1,162 @@
+@font-face {
+    font-family: h2;
+    src: url(../fonts/h2.otf);
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: h3;
+    src: url(../fonts/h3.ttf);
+}
+
+@font-face {
+    font-family: h1;
+    src: url(../fonts/h1.ttf);
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow: hidden;
+    -webkit-user-select: none;
+    / Chrome all / Safari all / -moz-user-select: none;
+    / Firefox all / -ms-user-select: none;
+    / IE 10+/ user-select: none;
+    box-sizing: border-box;
+}
+
+#background {
+    position: absolute;
+    width: 2560px;
+    height: 1440px;
+    background-size: 2560px auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -720px;
+    margin-left: -1280px;
+    background-size: cover;
+    visibility: hidden;
+}
+
+
+
+
+
+
+/*Title*/
+
+#title-img {
+    position: absolute;
+    top: 117px;
+}
+
+#title-text {
+    position: absolute;
+    left: 698px;
+    top: 41px;
+    width: 1159px;
+    text-align: center;
+    font-size: 58px;
+    font-family: ALSSchlangesans-Black;
+    color: #fff;
+    z-index: 2;
+}
+
+
+
+
+
+/*Game*/
+
+#game {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: h2;
+    overflow: hidden;
+}
+
+#game-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+#g-img{transform: scale(1.6);}
+.mishura{
+    animation: mishura 13s linear alternate infinite;
+}
+
+@-webkit-keyframes mishura{
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+
+/*Menu*/
+#menu-container {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    width: 500px;
+    left: -400px;
+    overflow: auto;
+    height: 1440px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+@-webkit-keyframes menuLeftAnim{
+    100%{
+        left: 0px;
+    }
+}
+@-webkit-keyframes menuRightAnim{
+    100%{
+        left: -400px;
+    }
+}
+
+#menu-container:hover{
+    animation: menuLeftAnim 1s;
+    left: 0px;
+    
+}
+#menu-container:mouseleave{
+    animation: menuRightAnim 0.3s;
+}
+
+
+.level-container{font-size: 30px;font-family: h2;display: flex;justify-content: center;align-items: center;flex-direction: column;background-color: #65484800;padding: 20px;border-radius: 10px;margin: 10px;width: 407px;height: 310px;text-align: center;}
+.level-name{background-color: white;width: 105%;height: 120px;display: flex;justify-content: center;align-items: center;margin: -55px 0 0 0;border-radius: 0 0 10px 10px;-webkit-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);-moz-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);font-size: 25px;}
+.level-img{border-radius: 20px 20px 0px 0px;-webkit-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);-moz-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);width: 424px;height: 267px;}
+
+
+
+
+/*Lang*/
+#change-lang{
+    position: absolute;
+    left: 2330px;
+    top: 100px;
+    border-radius: 69px;
+}
+#change-lang:hover{    
+    -webkit-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);
+}
