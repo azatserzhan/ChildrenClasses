@@ -219,10 +219,12 @@
     -webkit-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.75);
+    z-index: 1;
 }
 
 #g-text-play {
     padding: 10px;
+    z-index: 2;
 }
 
 #g-text-title {

@@ -71,8 +71,8 @@ var res = {
     },
     game_1_g_content: {
         ru: '«О сын духа! Мой первый совет таков: имей сердце чистое, любящее и светозарное...»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Уа, Рух Ұрпағы! Менің бірінші кеңесім мынадай: таза, мейірімді әрі нұрлы жүрекке ие бол...»',
+        en: '“O Son of Spirit! My first counsel is this: Possess a pure, kindly and radiant heart . . .”',
     },
 
     /*2*/
@@ -88,8 +88,8 @@ var res = {
     },
     game_2_g_content: {
         ru: '«Ходите путем справедливости, ибо, воистину, сие есть прямой путь»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Әділдіктің жолымен жүр, өйткені, ақиқатында, бұл – тура жол».',
+        en: '“Tread ye the path of justice, for this, verily, is the straight path.”',
     },
 
     /*3*/
@@ -105,8 +105,8 @@ var res = {
     },
     game_3_g_content: {
         ru: '«О друг! В саду сердца своего сажай лишь розы любви...»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Уа, Достым!  Өз жүрегіңнің бағына тек раушан гүлін ғана ек…»',
+        en: '“O Friend! In the garden of thy heart plant naught but the rose of love...”',
     },
 
     /*4*/
@@ -122,8 +122,8 @@ var res = {
     },
     game_4_g_content: {
         ru: '«Правдивость — основа всех человеческих добродетелей»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Шындық -  адамдардың барлық ізгі қасиеттерінің негізі»',
+        en: '“Truthfulness is the foundation of all human virtues.”',
     },
 
     /*5*/
@@ -139,8 +139,8 @@ var res = {
     },
     game_5_g_content: {
         ru: '«Мне присуще одарять и быть щедрым; благо тому, кто украшает себя Моими добродетелями»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Сыйға бөлеу және жомарт болу – Менің қасиеттерім; өзін Менің ізгі қасиеттерімен әшекейлегенге нұр жаусын»',
+        en: '“To give and to be generous are attributes of Mine; well is it with him that adorneth himself with My virtues.”',
     },
 
     /*6*/
@@ -156,8 +156,8 @@ var res = {
     },
     game_6_g_content: {
         ru: '«Благословен тот, кто предпочитает себе брата своего»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Кімде-кім қалауын бауырына берсе, соны Құдай жарылқайды»',
+        en: '“Blessed is he who preferreth his brother before himself.”',
     },
 
     /*7*/
@@ -173,8 +173,8 @@ var res = {
         },
     game_7_g_content: {
         ru: '«О сын человеческий! Возвеселись радостью сердца своего, да удостоишься встречи со Мною и отразишь благолепие Мое»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Уа, Адам Баласы! Өз жүрегіңнің қуанышыңмен  шаттан, сонда сен Менімен кездесуге лайық боласың және Менің сұлулығымды көрсетесің»',
+        en: '“O Son of Man! Rejoice in the gladness of thine heart, that thou mayest be worthy to meet Me and to mirror forth My beauty.”',
     },
 
     /*8*/
@@ -190,8 +190,8 @@ var res = {
     },
     game_8_g_content: {
         ru: '«Мы должны во всякое время являть правдивость и искренность»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Біз әр уақытта шынайылық пен адалдығымызды көрсетіп отыруымыз керек...»',
+        en: '“We should at all times manifest our truthfulness and sincerity...”',
     },
 
     /*9*/
@@ -207,8 +207,8 @@ var res = {
     },
     game_9_g_content: {
         ru: '«О сын человеческий! Смирись предо мною, дабы я милостиво снизошел до тебя...»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Уа, Адам Баласы! Менің алдымда бойұсын, сонда Мен саған рақыммен келемін»',
+        en: '“O Son of Man! Humble thyself before Me, that I may graciously visit thee.”',
     },
 
     /*10*/
@@ -224,8 +224,8 @@ var res = {
     },
     game_10_g_content: {
         ru: '«Будь счастлив и доволен и восстань, чтобы возблагодарить Бога, дабы благодарность вела к еще большим щедротам»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Бақытты және риза бол әрі Құдайға алғыс білдіруге көтеріл, сонда ризашылық одан да көп рақым-сыйларға алып келеді».',
+        en: '“Be thou happy and well pleased and arise to offer thanks to God, in order that thanksgiving may conduce to the increase of bounty.”',
     },
 
 
@@ -242,8 +242,8 @@ var res = {
         },
     game_11_g_content: {
         ru: '«...пусть украшением вашим станут прощение и милость и то, что радует сердца возлюбленных Божьих»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«...әшекейің сенің кешірімділік пен қайырымдылық болсын және Құдай сүйіктілерінің жүректерін қуантатын  нәрсе болсын».',
+        en: '“...let your adorning be forgiveness and mercy and that which cheereth the hearts of the well-favored of God.”',
     },
 
 
@@ -260,8 +260,8 @@ var res = {
         },
     game_12_g_content: {
         ru: '«Украсьте уста ваши, о люди, правдивостью, а души— узором честности»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Уа адамдар, тілдеріңді шыншылдықпен әшекейлеңдер, жандарыңды адалдық оюымен өрнектеңдер».',
+        en: '“Beautify your tongues, O people, with truthfulness, and adorn your souls with the ornament of honesty.”',
     },
 
 
@@ -278,8 +278,8 @@ var res = {
     },
     game_13_g_content: {
         ru: '«В основании Царствия Божия лежат беспристрастность и справедливость, милосердие, сострадание и добросердечие по отношению ко всякой живой душе»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Құдай Патшалығы әрбір тірі жанға қатысты риясыздық пен әділдікке, оған қоса рақымдылыққа, аяушылыққа және мейірімділікке негізделеді».',
+        en: '“The Kingdom of God is founded upon equity and justice, and also upon mercy, compassion, and kindness to every living soul.”',
     },
 
 
@@ -296,8 +296,8 @@ var res = {
     },
     game_14_g_content: {
         ru: '«Знай, что истинное украшение состоит в любви к Богу и в отрешении ото всего, кроме Него»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Шынайы әшекей Құдайға деген махаббатта және Одан басқаның барлығынан баз кешуде екенін біліп жүр».',
+        en: '“Know that thy true adornment consisteth in the love of God and in thy detachment from all save Him...”',
     },
 
 
@@ -314,8 +314,8 @@ var res = {
     },
     game_15_g_content: {
         ru: '«Исток всякой славы – приятие всего ниспосланного Господом и довольство тем, что Бог предписал»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Барлық даңқтың қайнар көзі – Құдай не жіберсе, соның бәрін қабылдау және Ол не тағайындаса, соның бәріне ризашылық таныту».',
+        en: '“The source of all glory is acceptance of whatsoever the Lord hath bestowed, and contentment with that which God hath ordained.”',
     },
 
 
@@ -332,8 +332,8 @@ var res = {
     },
     game_16_g_content: {
         ru: '«Блажен тот, кто общается со всеми людьми в духе совершенной доброты и любви».',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Барлық адамдармен асқан мейірімділік және сүйіспеншілік рухында араласқан адам алғыс-батаға кенеледі».',
+        en: '“Blessed is he who mingleth with all men in a spirit of utmost kindliness and love.”',
     },
 
 
@@ -350,8 +350,8 @@ var res = {
     },
     game_17_g_content: {
         ru: '«Исток мужества и силы — провозглашение Слова Божиего и неколебимость в любви к Нему»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Батылдық пен күш-қуат көзі - Құдай Сөзін алға жылжытып, Оның махаббатында табанды болуда».',
+        en: '“The source of courage and power is the promotion of the Word of God, and steadfastness in His Love.”',
     },
 
 
@@ -368,8 +368,8 @@ var res = {
     },
     game_18_g_content: {
         ru: '«Всегда сохраняй надежду, ибо неиссякаем поток благодеяний Божьих человеку»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Еш уақытта үміт үзбе, себебі Құдайдың адам баласына деген сый-шапағаты сарқылмайды».',
+        en: '“Be thou ever hopeful, for the bounties of God never cease to flow upon man.”',
     },
 
 
@@ -386,8 +386,8 @@ var res = {
     },
     game_19_g_content: {
         ru: '«Надежность служит величайшими вратами, ведущими к спокойствию и безопасности человеков»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Сенімділік - адамдардың тыныштығы мен қауіпсіздігіне апаратын ең ұлы қақпа».',
+        en: '“Trustworthiness is the greatest portal leading unto the tranquillity and security of the people.”',
     },
 
 
@@ -404,8 +404,8 @@ var res = {
     },
     game_20_g_content: {
         ru: '«Воистину, Я молю Бога, чтобы в твоем сердце был зажжен огонь Его любви...»',
-        kz: 'kz1 kz2 kz3 kz4 kz5',
-        en: 'en1 en2 en3 en4 en5',
+        kz: '«Ақиқатында, Мен Құдайға сенің жүрегіңде Оның махаббат оты жансын деп жалбарынамын».',
+        en: '“Verily, I supplicate God to enkindle in thy heart the fire of His love...”',
     },
 
 

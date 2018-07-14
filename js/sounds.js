@@ -8,13 +8,7 @@ var mySound = {
 
         if (localStorage.getItem('soundSfx') == 'true') {
             try {
-                var language = localStorage.getItem('language');
-                if (language == 'kz') {
-                    src = src[1];
-                } else {
-                    src = src[0];
-                }
-
+                src = src[res.lang];
                 sound = new Audio(src);
                 console.log('play src: ', src)
                 sound.play();

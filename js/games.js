@@ -69,16 +69,18 @@ var Games = {
 
         mySound.stop();
         mySound.play([
-            'sounds/pray/'+localStorage.getItem('currentLevel')+'/ru.mp3',
-            'sounds/pray/'+localStorage.getItem('currentLevel')+'/kz.mp3',
+            'sounds/pray/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/en/'+localStorage.getItem('currentLevel')+'.mp3',
         ]);
 
         $('#g-sort-sound').click(function(){
             mySound.stop();
             mySound.play([
-                'sounds/pray/'+localStorage.getItem('currentLevel')+'/ru.mp3',
-                'sounds/pray/'+localStorage.getItem('currentLevel')+'/kz.mp3',
-            ]);            
+            'sounds/pray/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/en/'+localStorage.getItem('currentLevel')+'.mp3',
+        ]);           
         });
     },
 
@@ -202,16 +204,18 @@ var Games = {
         $('#g-select-container').draggable();
         mySound.stop();
         mySound.play([
-            'sounds/pray/'+localStorage.getItem('currentLevel')+'/ru.mp3',
-            'sounds/pray/'+localStorage.getItem('currentLevel')+'/kz.mp3',
+            'sounds/pray/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/en/'+localStorage.getItem('currentLevel')+'.mp3',
         ]);
 
         $('#g-select-sound').click(function(){
             mySound.stop();
             mySound.play([
-                'sounds/pray/'+localStorage.getItem('currentLevel')+'/ru.mp3',
-                'sounds/pray/'+localStorage.getItem('currentLevel')+'/kz.mp3',
-            ]);            
+            'sounds/pray/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/en/'+localStorage.getItem('currentLevel')+'.mp3',
+        ]);           
         });
     },
 
@@ -341,20 +345,26 @@ var Games = {
 
         mySound.stop();
         mySound.play([
-            'sounds/pray/'+localStorage.getItem('currentLevel')+'/ru.mp3',
-            'sounds/pray/'+localStorage.getItem('currentLevel')+'/kz.mp3',
+            'sounds/pray/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/en/'+localStorage.getItem('currentLevel')+'.mp3',
+        ]);
+        mySound.play([
+            'sounds/pray/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/en/'+localStorage.getItem('currentLevel')+'.mp3',
         ]);
         $('#g-button-sound').click(function(){
             mySound.stop();
             mySound.play([
-                'sounds/pray/'+localStorage.getItem('currentLevel')+'/ru.mp3',
-                'sounds/pray/'+localStorage.getItem('currentLevel')+'/kz.mp3',
-            ]);            
+            'sounds/pray/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/pray/en/'+localStorage.getItem('currentLevel')+'.mp3',
+        ]);           
         });
     },
 
     text: function(param) {
-
         var title = param['title'];
         var content = param['content'];
         var appedned = param['div'];
@@ -418,7 +428,11 @@ var Games = {
             }, 500, function() {
                 textAnim();
                 mySound.stop();
-                mySound.play(soundSrc)
+                mySound.play([
+                    'sounds/history/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+                    'sounds/history/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+                    'sounds/history/en/'+localStorage.getItem('currentLevel')+'.mp3',
+                ]);
             });
 
             $('#g-text-play').attr('src', 'images/text/pause.png');
@@ -440,7 +454,13 @@ var Games = {
         function pauseSecond() {
 
             $('#g-text-play').click(function() {
-                mySound.play(soundSrc);
+                mySound.stop();
+                mySound.play([
+                    'sounds/history/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+                    'sounds/history/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+                    'sounds/history/en/'+localStorage.getItem('currentLevel')+'.mp3',
+                ]);
+
                 $('#g-text-play').attr('src', 'images/text/pause.png');
                 $('#g-text-play').unbind();
                 pauseFirst();
@@ -534,10 +554,6 @@ var Games = {
         kz: 'kz1 kz2 kz3 kz4 kz5',
         en: 'en1 en2 en3 en4 en5',
     },
-    soundSrc: [
-        'sounds/ru/0.mp3',
-        'sounds/kz/0.mp3'
-    ],
     div: 'game',
     onFinish: function(){
         

@@ -17,13 +17,6 @@ window.onload = function() {
 
 var gameAction = {
     loaded: 0,
-    life: 3,
-    lifeSystem: false, //true
-    timerSystem: false, //true
-    helpSystem: false,
-    showStartText: false, //true
-    timer: 60,
-
 
     start: function() {
         this.startAnim();
@@ -77,14 +70,21 @@ var gameAction = {
         $('.level-name').each(function() {
             var elem = $(this);
             switch (res.lang) {
-                case 0: elem.html(res[nameArr[count]].ru); break;
-                case 1: elem.html(res[nameArr[count]].kz); break;
-                case 2: elem.html(res[nameArr[count]].en); break;
+                case 0:
+                    elem.html(res[nameArr[count]].ru);
+                    break;
+                case 1:
+                    elem.html(res[nameArr[count]].kz);
+                    break;
+                case 2:
+                    elem.html(res[nameArr[count]].en);
+                    break;
             }
             count++;
         });
 
         $('.level-container').click(function() {
+            mySound.stop();
             $('#g-sort-container, #g-select-container, #g-button-box').remove();
             var obj = new gameArr[$(this).attr('key') * 1 - 1];
             obj.play({ id: $(this).attr('key') * 1 });
@@ -120,7 +120,7 @@ var gameAction = {
             $('#g-sort-container, #g-select-container, #g-button-box').remove();
             var id = 1;
             try { id = localStorage.getItem('currentLevel'); } catch (e) {}
-            var obj = new gameArr[id * 1-1];
+            var obj = new gameArr[id * 1 - 1];
             obj.play({ id: id * 1 });
 
             gameAction.menuInit(gameArr);
@@ -145,6 +145,7 @@ var gameOne = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_1_title.ru,
@@ -156,10 +157,6 @@ var gameOne = function() {
                     kz: res.game_1_content.kz,
                     en: res.game_1_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
@@ -185,6 +182,8 @@ var gameTwo = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
+
             Games.text({
                 title: {
                     ru: res.game_2_title.ru,
@@ -196,10 +195,6 @@ var gameTwo = function() {
                     kz: res.game_2_content.kz,
                     en: res.game_2_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.button({
@@ -225,6 +220,7 @@ var gameTh = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_3_title.ru,
@@ -236,10 +232,6 @@ var gameTh = function() {
                     kz: res.game_3_content.kz,
                     en: res.game_3_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.sort({
@@ -265,6 +257,7 @@ var gameFour = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_4_title.ru,
@@ -276,10 +269,6 @@ var gameFour = function() {
                     kz: res.game_4_content.kz,
                     en: res.game_4_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
@@ -305,6 +294,7 @@ var gameFive = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_5_title.ru,
@@ -316,10 +306,6 @@ var gameFive = function() {
                     kz: res.game_5_content.kz,
                     en: res.game_5_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.button({
@@ -345,6 +331,7 @@ var gameSix = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_6_title.ru,
@@ -356,10 +343,6 @@ var gameSix = function() {
                     kz: res.game_6_content.kz,
                     en: res.game_6_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.sort({
@@ -385,6 +368,7 @@ var gameSeven = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_7_title.ru,
@@ -396,10 +380,6 @@ var gameSeven = function() {
                     kz: res.game_7_content.kz,
                     en: res.game_7_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
@@ -425,6 +405,7 @@ var gameEight = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_8_title.ru,
@@ -436,10 +417,6 @@ var gameEight = function() {
                     kz: res.game_8_content.kz,
                     en: res.game_8_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.button({
@@ -465,6 +442,7 @@ var gameNine = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_9_title.ru,
@@ -476,10 +454,6 @@ var gameNine = function() {
                     kz: res.game_9_content.kz,
                     en: res.game_9_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.sort({
@@ -505,6 +479,7 @@ var gameTen = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_10_title.ru,
@@ -516,10 +491,6 @@ var gameTen = function() {
                     kz: res.game_10_content.kz,
                     en: res.game_10_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
@@ -546,6 +517,7 @@ var game11 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_11_title.ru,
@@ -557,10 +529,6 @@ var game11 = function() {
                     kz: res.game_11_content.kz,
                     en: res.game_11_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
@@ -586,6 +554,7 @@ var game12 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_12_title.ru,
@@ -597,10 +566,6 @@ var game12 = function() {
                     kz: res.game_12_content.kz,
                     en: res.game_12_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.button({
@@ -626,6 +591,7 @@ var game13 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_13_title.ru,
@@ -637,10 +603,6 @@ var game13 = function() {
                     kz: res.game_13_content.kz,
                     en: res.game_13_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.sort({
@@ -666,6 +628,7 @@ var game14 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_14_title.ru,
@@ -677,10 +640,6 @@ var game14 = function() {
                     kz: res.game_14_content.kz,
                     en: res.game_14_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
@@ -706,6 +665,7 @@ var game15 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_15_title.ru,
@@ -717,10 +677,6 @@ var game15 = function() {
                     kz: res.game_15_content.kz,
                     en: res.game_15_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.button({
@@ -746,6 +702,7 @@ var game16 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_16_title.ru,
@@ -757,10 +714,6 @@ var game16 = function() {
                     kz: res.game_16_content.kz,
                     en: res.game_16_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.sort({
@@ -786,6 +739,7 @@ var game17 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_17_title.ru,
@@ -797,10 +751,6 @@ var game17 = function() {
                     kz: res.game_17_content.kz,
                     en: res.game_17_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
@@ -826,6 +776,7 @@ var game18 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_18_title.ru,
@@ -837,10 +788,6 @@ var game18 = function() {
                     kz: res.game_18_content.kz,
                     en: res.game_18_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.button({
@@ -866,6 +813,7 @@ var game19 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_19_title.ru,
@@ -877,10 +825,6 @@ var game19 = function() {
                     kz: res.game_19_content.kz,
                     en: res.game_19_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.sort({
@@ -906,6 +850,7 @@ var game20 = function() {
     return {
         play: function(param) {
             $('#g-img').attr('src', 'images/game/img/' + param.id + '.jpg');
+            localStorage.setItem('currentLevel', param.id);
             Games.text({
                 title: {
                     ru: res.game_20_title.ru,
@@ -917,10 +862,6 @@ var game20 = function() {
                     kz: res.game_20_content.kz,
                     en: res.game_20_content.en,
                 },
-                soundSrc: [
-                    'sounds/' + param.id + '/ru.mp3',
-                    'sounds/' + param.id + '/kz.mp3'
-                ],
                 div: 'game',
                 onFinish: function() {
                     Games.list({
