@@ -59,8 +59,8 @@ var gameAction = {
         var count = 0;
         var nameArr = [
             'game_1_title', 'game_2_title', 'game_3_title', 'game_4_title', 'game_5_title',
-            /*'game_6_title',
-                        'game_7_title',*/
+            /*'game_6_title',*/
+                        'game_7_title',
             'game_8_title', 'game_9_title', 'game_10_title', 'game_11_title',
             /*'game_12_title',
                         'game_13_title','game_14_title',*/
@@ -93,6 +93,7 @@ var gameAction = {
     },
 
     langButton: function(gameArr) {
+        
         $('#change-lang').attr('src', 'images/text/lang/' + res.lang + '.png');
         $('#change-lang').attr('key', res.lang);
         $('#change-lang').click(function() {
@@ -125,8 +126,6 @@ var gameAction = {
 
             gameAction.menuInit(gameArr);
         });
-
-
     },
 
 

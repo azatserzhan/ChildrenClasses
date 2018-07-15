@@ -502,6 +502,13 @@ var Games = {
         });
 
         $('#g-text-container').draggable();
+
+        mySound.stop();
+        mySound.play([
+            'sounds/title/ru/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/title/kz/'+localStorage.getItem('currentLevel')+'.mp3',
+            'sounds/title/en/'+localStorage.getItem('currentLevel')+'.mp3',
+        ]);
     },
 
 }

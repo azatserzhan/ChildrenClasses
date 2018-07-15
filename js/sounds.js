@@ -5,17 +5,14 @@ var soundArr = [];
 var mySound = {
     //Вызов звуков
     play: function(src) {
-
-        if (localStorage.getItem('soundSfx') == 'true') {
-            try {
-                src = src[res.lang];
-                sound = new Audio(src);
-                console.log('play src: ', src)
-                sound.play();
-                soundArr.push(sound);
-            } catch (e) {
-                console.log('sounds.js файл не найден');
-            }
+        try {
+            src = src[res.lang];
+            sound = new Audio(src);
+            console.log('play src: ', src)
+            sound.play();
+            soundArr.push(sound);
+        } catch (e) {
+            console.log('sounds.js файл не найден');
         }
     },
 
@@ -52,11 +49,11 @@ var mySound = {
 
     //звуки
     trueSound: function() {
-        mySound.play(['../sounds/true.mp3', '../sounds/true.mp3']);
+        //mySound.play(['../sounds/true.mp3', '../sounds/true.mp3']);
     },
 
     falseSound: function() {
-        mySound.play(['../sounds/false.mp3', '../sounds/false.mp3']);
-        this.lifeShow(gameAction.life)
+        //mySound.play(['../sounds/false.mp3', '../sounds/false.mp3']);
+        //this.lifeShow(gameAction.life)
     },
 }
