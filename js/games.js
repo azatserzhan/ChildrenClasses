@@ -5,6 +5,7 @@ var Games = {
         var sortTitle = [
             'Отсортируй в правильном порядке',
             'Сөздерді дұрыс ретімен орналастыр',
+            'Sort in the correct order'
         ];
 
         var text = null;
@@ -88,8 +89,9 @@ var Games = {
         var content = param['content'];
         var appedned = param['div'];
         var listTitle = [
-            'Отсортируй в правильном порядке',
-            'Сөздерді дұрыс ретімен орналастыр',
+            'Выбери правильные ответы',
+            'Дұрыс жауаптарды таңда',
+            'Choose correct answers'
         ];
         var text = null;
         switch (res.lang) {
@@ -169,7 +171,8 @@ var Games = {
                 '<div id="g-select-title">' + listTitle[res.lang] + '<img id="g-select-sound" class="button" src="images/text/sound.png">'+'</div>' +
                 '<div id="g-select-game"></div></div>');
             $('#g-select-game').html(code);
-            $('#g-select-game').append('<div id="s-check" class="button">Проверить</div>')
+            var checkText = ['Проверить', 'Тексеру', 'Check'];
+            $('#g-select-game').append('<div id="s-check" class="button">'+checkText[res.lang]+'</div>')
             Anim.lib($('#g-select-container'), 'bounceInRight');
         }
         start();
@@ -266,10 +269,11 @@ var Games = {
 
 
             $('#' + appedned).append('<div id="g-button-box"></div>');
+            var checkText = ['Проверить', 'Тексеру', 'Check'];
             $('#g-button-box').html('<div id="g-button-box-text" class="center">'+
                 '<div id="g-button-title">'+clickTitle[res.lang]+'<img id="g-button-sound" class="button" src="images/text/sound.png">'+'</div>'+
                 '<div id="g-button-container"></div></div>' +
-                '<div id="g-button-check" class="button">Проверить</div>' +
+                '<div id="g-button-check" class="button">'+checkText[res.lang]+'</div>' +
                 '<div id="g-info"></div>');
             $('#g-button-container').html(code);
 
