@@ -48,7 +48,9 @@
     font-family: h1;
 }
 
-
+li{
+    list-style: none;
+}
 
 
 /* List */

@@ -315,8 +315,8 @@ var gameFive = function() {
                         },
                         div: 'game',
                         onFinish: function() {
-                            var obj = new gameSix();
-                            obj.play({ id: 6 });
+                            var obj = new gameSeven();
+                            obj.play({ id: 7 });
                         }
                     });
 
@@ -538,8 +538,8 @@ var game11 = function() {
                         },
                         div: 'game',
                         onFinish: function() {
-                            var obj = new game12();
-                            obj.play({ id: 12 });
+                            var obj = new game15();
+                            obj.play({ id: 15 });
                         }
                     });
 
@@ -686,8 +686,8 @@ var game15 = function() {
                         },
                         div: 'game',
                         onFinish: function() {
-                            var obj = new gameSix();
-                            obj.play({ id: 16 });
+                            var obj = new game19();
+                            obj.play({ id: 19 });
                         }
                     });
 
@@ -834,8 +834,8 @@ var game19 = function() {
                         },
                         div: 'game',
                         onFinish: function() {
-                            var obj = new gameTen();
-                            obj.play({ id: 110 });
+                            var obj = new gameOne();
+                            obj.play({ id: 1 });
                         }
                     });
 

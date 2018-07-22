@@ -30,7 +30,7 @@ var Games = {
             };
 
             for (var i = 0; i < text.length; i++) {
-                code.push('<div class="g-sort">' + text[i] + '</div>');
+                code.push('<li><div class="g-sort">' + text[i] + '</div></li>');
             }
             code.sort(function() {
                 return 0.5 - Math.random();
@@ -38,7 +38,7 @@ var Games = {
 
             $('#' + appedned).append('<div id="g-sort-container" class="center">' +
                 '<div id="g-sort-title">' + sortTitle[res.lang] + '<img id="g-sort-sound" class="button" src="images/text/sound.png">'+'</div>' +
-                '<div id="g-sort-box"></div></div>');
+                '<ul id="g-sort-box"></ul></div>');
 
             $('#g-sort-box').html(code);
         }
@@ -225,10 +225,11 @@ var Games = {
     button: function(param) {
         var content = param['content'];
         var appedned = param['div'];
-        var clickText = ['Колличесто лищних слов:', 'Артық сөз саны:', 'Number of excess words:'];
+        var clickText = ['Колличесто лишних слов:', 'Артық сөз саны:', 'Number of excess words:'];
         var clickTitle = [
-            'Путем клика удали лищние слова',
+            'Путем клика удали лишние слова',
             'Сөздерді басу арқылы артығын алып таста',
+            'Click words for remove excess words'
         ];
         var textGlobal = null;
         switch (res.lang) {

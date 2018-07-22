@@ -57,10 +57,10 @@ function resetText(id) {
 }
 
 var res = {
-    "threme-text": ['Истории из детских классов', 'Балаларға арналған оқиғалар', 'Stories from childrens classes'],
+    "threme-text": ['Истории из детских классов', 'қаз', 'en'],
     /*1*/
     game_1_title: {
-        ru: 'Чистота сердца',
+        ru: 'Чистое сердце',
         kz: 'Таза жүрек',
         en: 'Clean heart',
     },
@@ -72,7 +72,7 @@ var res = {
     game_1_g_content: {
         ru: '«О сын духа! Мой первый совет таков: имей сердце чистое, любящее и светозарное...»',
         kz: '«Уа, Рух Ұрпағы! Менің бірінші кеңесім мынадай: таза, мейірімді әрі нұрлы жүрекке ие бол...»',
-        en: '“O Son of Spirit! My first counsel is this: Possess a pure, kindly and radiant heart . . .”',
+        en: '“O Son of Spirit! My first counsel is this: Possess a pure, kindly and radiant heart...”',
     },
 
     /*2*/
@@ -105,7 +105,7 @@ var res = {
     },
     game_3_g_content: {
         ru: '«О друг! В саду сердца своего сажай лишь розы любви...»',
-        kz: '«Уа, Достым!  Өз жүрегіңнің бағына тек раушан гүлін ғана ек…»',
+        kz: '«Уа, Достым! Өз жүрегіңнің бағына тек раушан гүлін ғана ек…»',
         en: '“O Friend! In the garden of thy heart plant naught but the rose of love...”',
     },
 
@@ -122,7 +122,7 @@ var res = {
     },
     game_4_g_content: {
         ru: '«Правдивость — основа всех человеческих добродетелей»',
-        kz: '«Шындық -  адамдардың барлық ізгі қасиеттерінің негізі»',
+        kz: '«Шындық - адамдардың барлық ізгі қасиеттерінің негізі»',
         en: '“Truthfulness is the foundation of all human virtues.”',
     },
 
@@ -242,7 +242,7 @@ var res = {
         },
     game_11_g_content: {
         ru: '«...пусть украшением вашим станут прощение и милость и то, что радует сердца возлюбленных Божьих»',
-        kz: '«...әшекейің сенің кешірімділік пен қайырымдылық болсын және Құдай сүйіктілерінің жүректерін қуантатын  нәрсе болсын».',
+        kz: '«...әшекейің сенің кешірімділік пен қайырымдылық болсын және Құдай сүйіктілерінің жүректерін қуантатын нәрсе болсын».',
         en: '“...let your adorning be forgiveness and mercy and that which cheereth the hearts of the well-favored of God.”',
     },
 
