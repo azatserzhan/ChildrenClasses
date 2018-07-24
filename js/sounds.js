@@ -49,11 +49,10 @@ var mySound = {
 
     //звуки
     trueSound: function() {
-        //mySound.play(['../sounds/true.mp3', '../sounds/true.mp3']);
+        mySound.play(['sounds/sfx/true.mp3' , 'sounds/sfx/true.mp3', 'sounds/sfx/true.mp3' ]);
     },
 
     falseSound: function() {
-        //mySound.play(['../sounds/false.mp3', '../sounds/false.mp3']);
-        //this.lifeShow(gameAction.life)
+        mySound.play(['sounds/sfx/false.mp3' , 'sounds/sfx/false.mp3', 'sounds/sfx/false.mp3' ]);
     },
 }
